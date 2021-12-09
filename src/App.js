@@ -4,13 +4,19 @@ import store from './redux/store'
 import { useState , useEffect} from 'react';
 import './App.css';
 import CakeContainer from './Components/CakeContainer';
+import IceCreamContainer from './Components/IceCreamContainer';
+import HooksCakeContainer from './Components/HooksCakeContainer';
+import BurgerContainer from './Components/BurgerContainer';
 
    function App()
    {
       return (
         <Provider store={store}>
          <div className = 'App'>
+              <HooksCakeContainer />
                <CakeContainer />
+               <IceCreamContainer />
+               <BurgerContainer />
          </div>
          </Provider>
       )
